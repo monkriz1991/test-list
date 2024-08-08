@@ -1,0 +1,71 @@
+@use "../utils" as *;
+
+.heading {
+  color: $color-text-primary;
+}
+
+.heading_h1 {
+  @include font(1.5rem, 700, 137%);
+}
+
+.heading_h2 {
+  @include font(1.5rem, 600, 136%);
+}
+
+.heading_h3 {
+  @include font(1.25rem, 700, 136%);
+}
+
+.heading_h4 {
+  @include font(1.125rem, 600, 144%);
+}
+
+.heading_h5 {
+  @include font(1rem, 600, 144%);
+}
+
+.heading_h6 {
+  @include font(0.875rem, 700, 143%);
+}
+
+.body-text_1 {
+  @include font(1rem, 400, 144%);
+}
+
+.body-text_2 {
+  @include font(0.875rem, 400, 143%);
+}
+
+.body-text_3 {
+  @include font(0.75rem, 400, 133%);
+}
+
+.other-text {
+  @include font(0.6875rem, 600, 136%);
+}
+
+.button__text {
+  @include font(1rem, 600, 137%);
+}
+
+.button-small__text {
+  @include font(0.875rem, 600, 136%);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity $transition-hover ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active {
+  transition: opacity 0.7s;
+}
+
+.page-enter-from {
+  opacity: 0;
+}

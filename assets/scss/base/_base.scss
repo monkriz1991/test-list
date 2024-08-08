@@ -1,0 +1,66 @@
+@use "../utils" as *;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: $color-surface-secondary;
+  color: $color-text-primary;
+  animation: opacity 0.7s;
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.wrapper {
+  @include flex(column);
+  min-height: 100vh;
+  min-width: 20rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1040px;
+  margin: 0 auto;
+  @include padding-horizontal(1.5rem);
+}
+
+::-webkit-scrollbar {
+  width: 1.25rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.25rem solid transparent;
+  background-clip: padding-box;
+  border-radius: 1.25rem;
+  background-color: $color-border-primary;
+}
+
+@media screen and (max-width: $desktop-sm) {
+  ._container {
+    @include padding-horizontal(1.25rem);
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  ::-webkit-scrollbar {
+    width: 0rem;
+  }
+}
+
+@media screen and (max-width: $mobile-md) {
+  ._container {
+    @include padding-horizontal(1rem);
+  }
+}

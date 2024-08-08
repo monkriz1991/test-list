@@ -1,0 +1,155 @@
+:root {
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-invert: #ffffff;
+
+  --color-surface-primary: #f9fafb;
+  --color-surface-secondary: #f9fafb;
+  --color-surface-highlight: #f3f4f6;
+  --color-surface-invert: #111827;
+  --color-surface-brand: #be123c14;
+  --color-footer-background: #111827;
+
+  --color-button: #be123c;
+  --color-slider-round-button: rgba(255, 255, 255, 0.4);
+
+  --color-border-invert: #ffffff;
+  --color-border-primary: #d1d5db;
+  --color-border-secondary: #e5e7eb;
+  --color-border-icons: #9ca3af;
+  --color-border-accent: #be123c;
+
+  --color-accent-primary: #be123c;
+  --color-accent-secondary: #f43f5e;
+
+  --color-gradient-flags: rgba(255, 255, 255, 0.6);
+  --color-gradient-flags-hover: rgba(255, 255, 255, 0.5);
+  --gradient-radial: radial-gradient(
+    50% 50% at 50% 50%,
+    #f3f4f6 0%,
+    #f3f4f6 100%
+  );
+  --gradient-slider-fade: linear-gradient(
+    90deg,
+    #f9fafb 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  --color-checked-not-similar: #0651c1;
+
+  --color-positive-bg: #22ad5c1a;
+  --color-normal-bg: #0651c11a;
+  --color-negative-bg: #da12121a;
+  --color-warning-bg: #fbbf241a;
+
+  --color-warning: #fbbf24;
+  --color-success: #22ad5c;
+  --color-error: #da1212;
+  --color-info: #0651c1;
+  --bg-button: #ffc700;
+  --bg-button-hover: #ddad00;
+
+  --sm-shadow: 0rem 0.0625rem 0.375rem rgba(7, 7, 8, 0.15);
+}
+
+$bg-button-yellow: var(--bg-button);
+$bg-button-yellow-hover: var(--bg-button-hover);
+
+$color-text-primary: var(--color-text-primary);
+$color-text-secondary: var(--color-text-secondary);
+$color-text-invert: var(--color-text-invert);
+
+$color-surface-primary: var(--color-surface-primary);
+$color-surface-secondary: var(--color-surface-secondary);
+$color-surface-highlight: var(--color-surface-highlight);
+$color-surface-invert: var(--color-surface-invert);
+$color-surface-brand: var(--color-surface-brand);
+$color-footer-background: var(--color-footer-background);
+
+$color-other-silver: #8e94a1;
+$color-other-golden: #c4a020;
+$color-other-bronze: #a66417;
+$color-other-green: #18a215;
+$color-other-blue: #0651c1;
+$color-other-red: #be1212;
+
+$color-other-positive-bg: var(--color-positive-bg);
+$color-other-normal-bg: var(--color-normal-bg);
+$color-other-negative-bg: var(--color-negative-bg);
+$color-other-warning-bg: var(--color-warning-bg);
+
+$color-checked-similar: #18a215;
+$color-checked-not-similar: var(--color-checked-not-similar);
+$color-checked-by-photo: #a66417;
+$color-checked-personally: #c4a020;
+$color-checked-by-video: #8e94a1;
+$color-checked-not-verified: #da1212;
+$color-feedback-positive: #17a21533;
+$color-feedback-normal: #0651c133;
+$color-feedback-negative: #da121233;
+$color-warning: #fbbf24;
+$color-success: #22ad5c;
+$color-error: #da1212;
+$color-info: #0651c1;
+
+$color-accent-primary: var(--color-accent-primary);
+$color-accent-secondary: var(--color-accent-secondary);
+
+$color-button: var(--color-button);
+$color-slider-round-button: var(--color-slider-round-button);
+
+$color-border-invert: var(--color-border-invert);
+$color-border-primary: var(--color-border-primary);
+$color-border-secondary: var(--color-border-secondary);
+$color-border-icons: var(--color-border-icons);
+$color-border-accent: var(--color-border-accent);
+
+$gradient-linear-silver: linear-gradient(
+  156.1deg,
+  #c7cad0 -1.47%,
+  #f4f4f4 45.72%,
+  #bbc0c9 100%
+);
+$gradient-linear-gold: linear-gradient(
+  90.74deg,
+  #d0af5b 0%,
+  #ffe5b3 63.9%,
+  #b69235 100%
+);
+$gradient-linear-accent: linear-gradient(
+  90.74deg,
+  #881337 0%,
+  #be123c 49%,
+  #881337 100%
+);
+$gradient-linear-bronze: linear-gradient(
+  155.68deg,
+  #b17938 1.15%,
+  #fee6ca 47.11%,
+  #ad6c21 100%
+);
+$gradient-linear-variants: linear-gradient(
+  270deg,
+  #320b38 0%,
+  #320b38 50%,
+  #ffffff 50%,
+  #ffffff 100%
+);
+$gradient-radial: var(--gradient-radial);
+$gradient-slider-fade: var(--gradient-slider-fade);
+$color-gradient-flags: var(--color-gradient-flags);
+$color-gradient-flags-hover: var(--color-gradient-flags-hover);
+
+$desktop-lg: 90rem;
+$desktop-md: 60rem;
+$desktop-sm: 45rem;
+$tablet: 46.5rem;
+$mobile-md: 26.875rem;
+
+$width-md: 100%;
+
+$sm-shadow: var(--sm-shadow);
+$hover-light-mode: 0rem 0.25rem 0.9375rem rgba(190, 18, 60, 0.3);
+$hover-dark-mode: 0rem 0.25rem 0.9375rem rgba(244, 63, 94, 0.3);
+
+$transition-hover: 0.3s;

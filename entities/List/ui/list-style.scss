@@ -1,0 +1,76 @@
+@use "@/assets/scss/utils" as *;
+.job-card {
+  background: #fff;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 20px 20px 24px;
+
+  &__type {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #90bb0b;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    strong {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      display: flex;
+      gap: 20px;
+
+      &-price,
+      &-deadline {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+    &-right {
+    }
+  }
+
+  &__button {
+    background: $bg-button-yellow;
+    color: $color-text-primary;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+
+    &:hover {
+      transition: 0.2s;
+      background: $bg-button-yellow-hover;
+    }
+  }
+}
+@media screen and (max-width: $desktop-md) {
+  .job-card {
+    padding: 20px 20px 24px;
+
+    &__bottom {
+      &-left {
+        gap: 10px;
+        flex-direction: column;
+      }
+    }
+  }
+}
