@@ -6,18 +6,19 @@ import "./home-section.scss";
 
 const title = ref("Все задания");
 // Использование Pinia Store
-const [allDataStore] = [useAllDataStore()];
+const allDataStore = useAllDataStore();
 await allDataStore.requestAllData();
 const { seo } = storeToRefs(allDataStore);
 const { list } = storeToRefs(allDataStore);
 const { profile } = storeToRefs(allDataStore);
 
 useSeoMeta({
-  title: seo.value.seo.title || "Title",
+  title: seo.value?.seo?.title || "Title",
   keywords: "",
-  description: seo.value.seo.text || "Description",
+  description: seo.value?.seo?.text || "Description",
 });
 </script>
+
 <template>
   <section class="home">
     <div class="_container">
