@@ -19,12 +19,9 @@ export const useAllDataStore = defineStore("allData", () => {
 
   const requestAllData = async () => {
     status.statusRequest = "pending";
-    const { data, error } = await useTransport(
-      `/linovprod?api_key=DMwdj29q@S29shslok2`,
-      {
-        method: "POST",
-      }
-    );
+    const { data, error } = await useTransport(`?api_key=DMwdj29q@S29shslok2`, {
+      method: "GET",
+    });
 
     if (error.value) {
       console.warn(error.value);
